@@ -1,0 +1,557 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{18A7F07D-A7D6-41E2-8248-CEBB5B812490}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GUI</RootNamespace>
+    <AssemblyName>GUI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Siticone.Desktop.UI, Version=2.1.1.0, Culture=neutral, PublicKeyToken=9683591576b7f0b4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Siticone.Desktop.UI.2.1.1\lib\net40\Siticone.Desktop.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="fAddDocGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddDocGia.Designer.cs">
+      <DependentUpon>fAddDocGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fAddNguoiDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddNguoiDung.Designer.cs">
+      <DependentUpon>fAddNguoiDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fAddNhomND.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddNhomND.Designer.cs">
+      <DependentUpon>fAddNhomND.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fAddSachDaCo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddSachDaCo.Designer.cs">
+      <DependentUpon>fAddSachDaCo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fAddSachMoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddSachMoi.Designer.cs">
+      <DependentUpon>fAddSachMoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fAddTuaSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddTuaSach.Designer.cs">
+      <DependentUpon>fAddTuaSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fChangePassword.Designer.cs">
+      <DependentUpon>fChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fEditDocGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fEditDocGia.Designer.cs">
+      <DependentUpon>fEditDocGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fEditLoaiDG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fEditLoaiDG.Designer.cs">
+      <DependentUpon>fEditLoaiDG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fEditNhomND.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fEditNhomND.Designer.cs">
+      <DependentUpon>fEditNhomND.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fEditNguoiDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fEditNguoiDung.Designer.cs">
+      <DependentUpon>fEditNguoiDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fEditPhieuMuon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fEditPhieuMuon.Designer.cs">
+      <DependentUpon>fEditPhieuMuon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fEditTacGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fEditTacGia.Designer.cs">
+      <DependentUpon>fEditTacGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fEditTheLoai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fEditTheLoai.Designer.cs">
+      <DependentUpon>fEditTheLoai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fEditTuaSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fEditTuaSach.Designer.cs">
+      <DependentUpon>fEditTuaSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fHome.Designer.cs">
+      <DependentUpon>fHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fInfoDocGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fInfoDocGia.Designer.cs">
+      <DependentUpon>fInfoDocGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fInfoNguoiDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fInfoNguoiDung.Designer.cs">
+      <DependentUpon>fInfoNguoiDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fInfoNhomND.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fInfoNhomND.Designer.cs">
+      <DependentUpon>fInfoNhomND.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fInfoPhieuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fInfoPhieuNhap.Designer.cs">
+      <DependentUpon>fInfoPhieuNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fInfoTuaSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fInfoTuaSach.Designer.cs">
+      <DependentUpon>fInfoTuaSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fManager.Designer.cs">
+      <DependentUpon>fManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formLogin.Designer.cs">
+      <DependentUpon>formLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fPhieuMuonSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fPhieuMuonSach.Designer.cs">
+      <DependentUpon>fPhieuMuonSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fPhieuThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fPhieuThu.Designer.cs">
+      <DependentUpon>fPhieuThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fQMK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fQMK.Designer.cs">
+      <DependentUpon>fQMK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\ucThayDoiQuyDinh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucThayDoiQuyDinh.Designer.cs">
+      <DependentUpon>ucThayDoiQuyDinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucBanAccess.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucBanAccess.Designer.cs">
+      <DependentUpon>ucBanAccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucBCTK.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucBCTK.Designer.cs">
+      <DependentUpon>ucBCTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucCuonSach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucCuonSach.Designer.cs">
+      <DependentUpon>ucCuonSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucDocGia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucDocGia.Designer.cs">
+      <DependentUpon>ucDocGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucHome_TCS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucHome_TCS.Designer.cs">
+      <DependentUpon>ucHome_TCS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucHome_TTTK.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucHome_TTTK.Designer.cs">
+      <DependentUpon>ucHome_TTTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucLoaiDG.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucLoaiDG.Designer.cs">
+      <DependentUpon>ucLoaiDG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucMuonTheoTheLoai.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucMuonTheoTheLoai.Designer.cs">
+      <DependentUpon>ucMuonTheoTheLoai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucNguoiDung.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucNguoiDung.Designer.cs">
+      <DependentUpon>ucNguoiDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucNhomND.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucNhomND.Designer.cs">
+      <DependentUpon>ucNhomND.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucPhieuNhap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucPhieuNhap.Designer.cs">
+      <DependentUpon>ucPhieuNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucQLDG.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucQLDG.Designer.cs">
+      <DependentUpon>ucQLDG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucQLND.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucQLND.Designer.cs">
+      <DependentUpon>ucQLND.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucQLPhieuMuon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucQLPhieuMuon.Designer.cs">
+      <DependentUpon>ucQLPhieuMuon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucQLPhieuThu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucQLPhieuThu.Designer.cs">
+      <DependentUpon>ucQLPhieuThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucQLSach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucQLSach.Designer.cs">
+      <DependentUpon>ucQLSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucSach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucSach.Designer.cs">
+      <DependentUpon>ucSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucSachTraTre.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucSachTraTre.Designer.cs">
+      <DependentUpon>ucSachTraTre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucTacGia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucTacGia.Designer.cs">
+      <DependentUpon>ucTacGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucTheLoai.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucTheLoai.Designer.cs">
+      <DependentUpon>ucTheLoai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucThongTinTaiKhoan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucThongTinTaiKhoan.Designer.cs">
+      <DependentUpon>ucThongTinTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucTuaSach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucTuaSach.Designer.cs">
+      <DependentUpon>ucTuaSach.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="fAddDocGia.resx">
+      <DependentUpon>fAddDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAddNguoiDung.resx">
+      <DependentUpon>fAddNguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAddNhomND.resx">
+      <DependentUpon>fAddNhomND.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAddSachDaCo.resx">
+      <DependentUpon>fAddSachDaCo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAddSachMoi.resx">
+      <DependentUpon>fAddSachMoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAddTuaSach.resx">
+      <DependentUpon>fAddTuaSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fChangePassword.resx">
+      <DependentUpon>fChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fEditDocGia.resx">
+      <DependentUpon>fEditDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fEditLoaiDG.resx">
+      <DependentUpon>fEditLoaiDG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fEditNguoiDung.resx">
+      <DependentUpon>fEditNguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fEditNhomND.resx">
+      <DependentUpon>fEditNhomND.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fEditPhieuMuon.resx">
+      <DependentUpon>fEditPhieuMuon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fEditTacGia.resx">
+      <DependentUpon>fEditTacGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fEditTheLoai.resx">
+      <DependentUpon>fEditTheLoai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fEditTuaSach.resx">
+      <DependentUpon>fEditTuaSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fHome.resx">
+      <DependentUpon>fHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fInfoDocGia.resx">
+      <DependentUpon>fInfoDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fInfoNguoiDung.resx">
+      <DependentUpon>fInfoNguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fInfoNhomND.resx">
+      <DependentUpon>fInfoNhomND.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fInfoPhieuNhap.resx">
+      <DependentUpon>fInfoPhieuNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fInfoTuaSach.resx">
+      <DependentUpon>fInfoTuaSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fManager.resx">
+      <DependentUpon>fManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formLogin.resx">
+      <DependentUpon>formLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fPhieuMuonSach.resx">
+      <DependentUpon>fPhieuMuonSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fPhieuThu.resx">
+      <DependentUpon>fPhieuThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fQMK.resx">
+      <DependentUpon>fQMK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserControls\ucThayDoiQuyDinh.resx">
+      <DependentUpon>ucThayDoiQuyDinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucBanAccess.resx">
+      <DependentUpon>ucBanAccess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucBCTK.resx">
+      <DependentUpon>ucBCTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucCuonSach.resx">
+      <DependentUpon>ucCuonSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucDocGia.resx">
+      <DependentUpon>ucDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucHome_TCS.resx">
+      <DependentUpon>ucHome_TCS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucHome_TTTK.resx">
+      <DependentUpon>ucHome_TTTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucLoaiDG.resx">
+      <DependentUpon>ucLoaiDG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucMuonTheoTheLoai.resx">
+      <DependentUpon>ucMuonTheoTheLoai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucNguoiDung.resx">
+      <DependentUpon>ucNguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucNhomND.resx">
+      <DependentUpon>ucNhomND.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucPhieuNhap.resx">
+      <DependentUpon>ucPhieuNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucQLDG.resx">
+      <DependentUpon>ucQLDG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucQLND.resx">
+      <DependentUpon>ucQLND.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucQLPhieuMuon.resx">
+      <DependentUpon>ucQLPhieuMuon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucQLPhieuThu.resx">
+      <DependentUpon>ucQLPhieuThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucQLSach.resx">
+      <DependentUpon>ucQLSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucSach.resx">
+      <DependentUpon>ucSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucSachTraTre.resx">
+      <DependentUpon>ucSachTraTre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucTacGia.resx">
+      <DependentUpon>ucTacGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucTheLoai.resx">
+      <DependentUpon>ucTheLoai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucThongTinTaiKhoan.resx">
+      <DependentUpon>ucThongTinTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucTuaSach.resx">
+      <DependentUpon>ucTuaSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{e33c3017-f751-4a8e-ac81-78a0d3ca74d7}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{8c87408d-f949-4359-9a13-133d281f609b}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\library_background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>
